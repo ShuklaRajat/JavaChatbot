@@ -1,0 +1,17 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar 
+ */
+
+grammar grammar;
+
+public <feelings>  = ( how are you | say hello to everyone | who made you | what does your boss do);
+public <voices>  = ( change to voice one  | change to voice two | change to voice three );
+public <amazing>  = ( say amazing | what day is today | what is the date today | play a song for me | song two | song one );
+public <nervous>  = (who is your god | will you obey me | hey boss | tell the audience about the project we made | stop speaking);
+public <number> = ( zero | one | two | three | four | five | six | seven | nine | ten
+                   | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen | twenty 
+                   | thirty | forty | fifty | sixty | seventy | eighty | ninety |
+		            hundred | thousand | million | billion)+;                   
+public <syntax> = <number>{1} (plus | minus | multiply | division){1} <number>{1}; 
